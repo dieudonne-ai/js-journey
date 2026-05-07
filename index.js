@@ -1,6 +1,15 @@
-// Abstraction layer for the different implementations of the API
-// This allows us to switch between different implementations without changing the code that uses the API
+// inheritance
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 
-const { getConfig } = require('./config');
+    getName() {
+        return this.name;
+    }
 
-const config = getConfig();
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
