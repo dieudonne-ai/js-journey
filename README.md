@@ -79,3 +79,67 @@ let number = 5;
 console.log(square(number));
 
 ```
+
+## Object Oriented Programing(OOP) in JavaScript
+
+This is the CORE concept in programming, it help to organise code avoid patern in the program make the program easy to understand and to fix.
+It use Object as main CORE of operation.
+
+### 4 Popular concept in OOP
+
+- Encapsulation (Reduce complexity + Increase reusability)
+  "The best function are those with no parameters!!"
+
+Exemple:
+code
+
+```js
+// Simple function
+
+let baseSalary = 30000;
+let overtime = 10;
+let rate = 20;
+
+function getWage(baseSalary, overtime, rate) {
+  return baseSalary + overtime * rate;
+}
+
+// Encapsulation with Object
+
+let employee = {
+  baseSalary: 30000,
+  overtime: 10,
+  rate: 20,
+  getWage: function () {
+    return this.baseSalary + this.overtime * this.rate;
+  },
+};
+
+console.log(getWage(baseSalary, overtime, rate)); // 32000
+console.log(employee.getWage()); // 32000
+```
+
+- Abstraction (Reduce complexity + Isolate impact of changes)
+  With this we reduce impact of change
+
+Exemple:
+code
+
+```js
+// Abstraction layer for the different implementations of the API
+// This allows us to switch between different implementations without changing the code that uses the API
+
+const { getConfig } = require("./config");
+
+const config = getConfig();
+```
+
+- Inheritance (Eliminate redundant code)
+  Help to eliminate a redundant code
+
+```js
+
+```
+
+- Polymorphism (Refactor ugly switch/case statements)
+  Many Form

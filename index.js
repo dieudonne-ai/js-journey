@@ -1,9 +1,6 @@
+// Abstraction layer for the different implementations of the API
+// This allows us to switch between different implementations without changing the code that uses the API
 
+const { getConfig } = require('./config');
 
-
-//calculating a value multiple times
-function square(number) {
-    return number * number;
-}
-let number = 5;
-console.log(square(number));
+const config = getConfig();
