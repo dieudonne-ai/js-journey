@@ -1,5 +1,7 @@
 # Start my JavaScript journey
 
+Simply JavaScript is a browser programming language it use every whre in programming. We can use it as frontend language or backend languange using NODEjs,...
+
 ## Type of values in js:
 
 ### Pimitive/Value Types
@@ -11,16 +13,17 @@
 - null
 
 ```js
-let a = 10;
-let name = "Dido";
-let isActive = true;
-let firstName = null;
-let lastName = undefined;
+let age = 10; // Number value
+let name = "Dido"; // String value
+let isActive = true; // Boolean Value
+let firstName = null; // Null value
+let lastName = undefined; // Undefined Value
 ```
 
 ### Reference Tupe
 
 - Object
+  An instance of a class, that store multiple value at once.
 
   exemple:
   code
